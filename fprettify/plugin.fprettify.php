@@ -13,9 +13,8 @@ add_action('wp_head', 'plugin_fprettify_head', 0);
 function plugin_fprettify_head() {
 	$pdir=plugin_geturl('jquery');
 	echo <<<JSUTILS
-	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/src/prettify.css">
-JSUTILS;
+	echo "<script src=\"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js\"></script>\n";
+	echo "\t<link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/google/code-prettify/master/src/prettify.css\">\n";
 }
 
 function plugin_fprettyprint($string) {
