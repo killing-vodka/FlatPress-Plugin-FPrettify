@@ -11,8 +11,6 @@ Author URI: http://www.pozharlab.net
 add_action('wp_head', 'plugin_fprettify_head', 0);
 
 function plugin_fprettify_head() {
-	$pdir=plugin_geturl('jquery');
-	
 	echo "<script src=\"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js\"></script>\n";
 	echo "\t<link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/google/code-prettify/master/src/prettify.css\">\n";
 }
