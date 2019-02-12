@@ -5,7 +5,7 @@ Version: 0.1
 Plugin URI: https://github.com/pozharlab/FlatPress-Plugin-FPrettify
 Description: A script that makes source-code snippets in HTML prettier.
 Author: Giovanni Forte
-Author URI: http://www.pozharlab.net
+Author URI: http://www.vodkafilm.it
 */
 
 add_action('wp_head', 'plugin_fprettify_head', 0);
